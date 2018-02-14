@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, IndexRoute } from 'react-router';
 import App from './components/app';
 import Posts from './components/posts';
+import PostsNew from './components/posts_new';
 
 const Greeting = () => {
     return <div>HELLO!</div>;
@@ -12,7 +13,8 @@ export default (
         <IndexRoute component={Posts} />
         {/*Posts component content will show on main page*/}
         {/*IndexRoute makes any component match main App component and show content from this component on main page*/}
-        <Route path="greet" component={Greeting} />
+        {/*<Route path="greet" component={Greeting} />*/}
+           <Route path="posts/new" component={PostsNew} />
     </Route>
     //{App} is a parent and {Greeting} is children above
     //App has to render Greeting using this.props.children in app.js
