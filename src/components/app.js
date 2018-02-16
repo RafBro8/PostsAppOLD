@@ -4,7 +4,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        React simple starter
+        {/*React simple starter*/}
           {this.props.children}
       </div>
         //Through this.props.children, App renders children components, in this case
